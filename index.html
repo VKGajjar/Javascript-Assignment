@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+      
+<head>
+    <title> Javascript Assignment
+    </title>
+      
+    <style>
+        body {
+            text-align: center;
+        }
+        h1 {
+            color:black;
+        }
+    </style>
+</head>
+  
+<body>
+    <div id="height">Height: <span></span></div>
+    <div id="width">Width: <span></span></div>
+      
+    <script>
+        const height = document.querySelector("#height span");
+        const width = document.querySelector("#width span");
+           
+        window.onload = function() {
+            height.innerHTML = window.innerHeight;
+            width.innerHTML = window.innerWidth;
+        };
+           
+        window.onresize = function() {
+           
+            height.innerHTML = window.innerHeight; 
+            width.innerHTML = window.innerWidth;
+        };
+    </script>
+</body>
+  
+</html>
